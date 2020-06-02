@@ -122,11 +122,23 @@ Copy the questions below into the first-lastname.txt file on your github repo - 
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
+        Inline elements don't create an new line
+        Block elements cause a line break, take up their own line
     2. What happens when an element is positioned absolutely? 
+        The other elements on the page will ignore it and act like it isnt present on the page and it will be positioned relative to its closest positioned parent element
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+        Change the display to block
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+        Display block: <p>, <div>, <footer> 
+        Display inline: <span> <br>
+        Inline-block: <button>
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
-
+        All elements on the page are contained in its own box and you have to take into account the properties (width, padding, border, and margin) of the box when modifying the element.
+        The default behavior of the box model can make it hard to position and manage the elements on the page because you have to get the sizing of the box just right. 
+        To fix this change the box-sizing property to border-box in the universal selector
+        * {
+            box-sizing: border-box;
+        }
 
 
    --> 
