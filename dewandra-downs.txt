@@ -98,7 +98,24 @@ Copy the questions below into the first-lastname.txt file on your github repo - 
     35. How often should I commit to github?
         Often. Every 20 mins.
     36. What is the command we would use to push our repo up to github? 
+        Initially git push -u origin <branch-name>
+        Then just git push
     37. Walk me through Lambda's git flow. 
+        1.Fork your own repo on github
+        2.Add TL as collaborator
+        3.Clone your repo to git in the directory of your choosing using git clone <link-to-repo>
+        4.Go to the newly created repo directory using cd <repo-name>
+        5.Branch the repo using git checkout -b "firstname-lastname"
+        6.Work on repo 
+        7. Continually add, commit, and push changes to your branch
+            a. Use git add . to add all changes made 
+            b. Use git commit -m "message" to save changes made with a message that details the modifications made
+            c. Use git push -u origin <branch-name> to push commits made from your computer to your github repo
+                After the branch has been created with the first push command, just use git push to push commits to github
+        8.Submit a Pull Request 
+            a.Make sure the base repo is your forked repo instead of the original Lambda repo
+            b.Add your TL to the reviewers
+            c.Submit the Pull Request
 
 Stretch Questions
 
